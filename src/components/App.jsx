@@ -1,3 +1,5 @@
+import { ProfileCard } from "../components/ProfileCard/ProfileCard.jsx";
+import user from './ProfileCard/user.json';
 export const App = () => {
   return (
     <div
@@ -10,7 +12,9 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <ProfileCard
+        userItems={user}
+      />
     </div>
   );
 };
