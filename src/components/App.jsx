@@ -1,4 +1,4 @@
-import { ProfileCard } from "../components/ProfileCard/ProfileCard.jsx";
+import { ProfileCard } from "../components/ProfileCard/ProfileCard.js";
 import user from './ProfileCard/user.json';
 export const App = () => {
   return (
