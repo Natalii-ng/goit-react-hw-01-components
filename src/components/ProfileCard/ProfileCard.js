@@ -16,15 +16,15 @@ export const ProfileCard = ({ userItems: { username, tag, location, avatar, stat
 
     <ul className={css.stats}>
       <li className={css.items}>
-        <span className={css.label}>Followers:</span>
+        <span className={css.label}>Followers</span>
         <span className={css.quantity}>{stats.followers}</span>
       </li>
-      <li>
-        <span className={css.label}>Views:</span>
+      <li className={css.items}>
+        <span className={css.label}>Views</span>
         <span className={css.quantity}>{stats.views}</span>
       </li>
-      <li>
-        <span className={css.label}>Likes:</span>
+      <li className={css.items}>
+        <span className={css.label}>Likes</span>
         <span className={css.quantity}>{stats.likes}</span>
       </li>
     </ul>
