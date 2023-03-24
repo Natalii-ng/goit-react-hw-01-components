@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './ProfileCard.module.css';
 
-export const ProfileCard = ({ userItems: { username, tag, location, avatar, stats } }) => {
+export const ProfileCard = ( { username, tag, location, avatar, stats } ) => {
   return (<div className={css.profile}>
   <div key={username} className={css.description}>
       <img
