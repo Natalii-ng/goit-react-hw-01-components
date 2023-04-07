@@ -3,16 +3,17 @@ import css from '../Statistics/Statistics.module.css';
 import { StatisticElement } from '../Statistics/StatisticElement';
 
 export const Statistics = ({ title, stats }) => {
-    return (<section className={css.statistics}>
-        {title && <h2 className={css.title}>{title}</h2>}
-        <ul className={css.statlist}>
-            {stats.map(stat => (
-                <StatisticElement key={stat.id} stat={stat}></StatisticElement>
-            ))}
-        </ul>
+  return (
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
+      <ul className={css.statlist}>
+        {stats.map(stat => (
+          <StatisticElement key={stat.id} stat={stat}></StatisticElement>
+        ))}
+      </ul>
     </section>
-    );
-}
+  );
+};
 
 Statistics.propTypes = {
   title: PropTypes.string,

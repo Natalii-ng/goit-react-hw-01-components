@@ -8,12 +8,12 @@ export const StatisticElement = ({ stat }) => {
       <span className={css.percentage}>{stat.percentage}%</span>
     </li>
   );
-}
+};
 
 StatisticElement.propTypes = {
   stat: PropTypes.shape({
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired
+    percentage: PropTypes.number.isRequired,
   }),
 };

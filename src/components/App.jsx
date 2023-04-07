@@ -1,4 +1,4 @@
-import { ProfileCard } from "../components/ProfileCard/ProfileCard.js";
+import { ProfileCard } from '../components/ProfileCard/ProfileCard.js';
 import user from './ProfileCard/user.json';
 import data from './Statistics/data.json';
 import { FriendList } from './FriendList/FriendList.js';
@@ -9,7 +9,6 @@ import { Statistics } from './Statistics/Statistics.js';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory.js';
 import transactions from './TransactionHistory/transactions.json';
 
-
 export const App = () => {
   return (
     <div
@@ -19,17 +18,19 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      <ProfileCard username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}/>
+      <ProfileCard
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <Statistics title="Upload stats" stats={data}></Statistics>
       <FriendList friends={friends}></FriendList>
-       <TransactionHistory items={transactions}/>
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
